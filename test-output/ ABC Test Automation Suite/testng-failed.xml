@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ ABC Test Automation Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="ABC Test Automation(failed)">
+    <parameter name="pasword" value="bishal08"/>
+    <parameter name="emailId" value="bishalisonline"/>
+    <parameter name="url" value="https://www.gmail.com"/>
+    <classes>
+      <class name="com.parameters.ParameterTest">
+        <methods>
+          <include name="gmailLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.parameters.ParameterTest -->
+    </classes>
+  </test> <!-- ABC Test Automation(failed) -->
+</suite> <!-- Failed suite [ ABC Test Automation Suite] -->

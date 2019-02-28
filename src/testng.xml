@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name=" ABC Test Automation Suite">
+
+
+  <listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+<test name="ABC Test Automation">
+<parameter name="url" value="https://www.gmail.com"/>
+<parameter name="emailId" value="bishalisonline"/>
+<parameter name="pasword" value="bishal08"/>
+			<classes>
+				<class name="com.parameters.ParameterTest"></class>
+				<!-- <class name="com.test.ExceptionTest"></class>
+					<class name="com.test.GoogleTest"></class>
+					<class name="com.test.InvocationTestCount"></class>
+					<class name="com.test.TestNGFeatures"></class> -->
+			</classes>
+
+	</test>
+</suite>
